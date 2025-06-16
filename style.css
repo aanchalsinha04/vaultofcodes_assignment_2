@@ -6,61 +6,68 @@
 }
 
 body {
-  background-color: #ffeef2; /* soft pastel pink background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background-color: #ffeef2;
+  padding: 2rem;
 }
 
 .container {
-  width: 90%;
-  max-width: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.internship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .internship-card {
-  background-color: #fff0f5; /* lighter pink card */
-  padding: 2rem;
+  background-color: #fff0f5;
+  padding: 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border: 2px solid #ffd6e8;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 }
 
-.internship-card h1 {
-  font-size: 1.8rem;
-  color: #b03060; /* rose/maroon tone for heading */
+.internship-card:hover {
+  transform: translateY(-5px);
+}
+
+.internship-card h2 {
+  font-size: 1.4rem;
+  color: #b03060;
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
   color: #6d214f;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 
 .details p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: #4e3a4c;
 }
 
 .button-group {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s, color 0.3s, transform 0.2s ease;
-  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 10px;
 }
 
 .primary {
   background-color: #ff85a2;
   color: white;
-  margin-right: 10px;
 }
 
 .primary:hover {
@@ -69,7 +76,7 @@ body {
 }
 
 .secondary {
-  background-color: #fff;
+  background-color: white;
   color: #ff85a2;
   border: 2px solid #ff85a2;
 }
