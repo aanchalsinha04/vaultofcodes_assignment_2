@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffeef2; /* soft pastel pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+}
+
+.internship-card {
+  background-color: #fff0f5; /* lighter pink card */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffd6e8;
+}
+
+.internship-card h1 {
+  font-size: 1.8rem;
+  color: #b03060; /* rose/maroon tone for heading */
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #6d214f;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.details p {
+  margin-bottom: 0.5rem;
+  color: #4e3a4c;
+}
+
+.button-group {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #ff85a2;
+  color: white;
+  margin-right: 10px;
+}
+
+.primary:hover {
+  background-color: #e97393;
+  transform: scale(1.05);
+}
+
+.secondary {
+  background-color: #fff;
+  color: #ff85a2;
+  border: 2px solid #ff85a2;
+}
+
+.secondary:hover {
+  background-color: #ffe5ec;
+  transform: scale(1.05);
+}
